@@ -20,12 +20,14 @@ from src.models import Config, Mission
 from src.scorer import MissionScorer
 from src.sources.base import Source
 from src.sources.codeur import CodeurSource
+from src.sources.four_zero_four_works import FourZeroFourWorksSource
 
 load_dotenv()
 
 
 SOURCE_REGISTRY: dict[str, type[Source]] = {
     "codeur": CodeurSource,
+    "404works": FourZeroFourWorksSource,
 }
 
 

@@ -1,7 +1,7 @@
 scanner:
   sources:
     - codeur
-    # - freelance_com   # à activer quand le scraper sera fait
+    - 404works
 
   # Profil envoyé à Claude pour qu'il note les missions selon ce qu'on sait faire
   profile_summary: |
@@ -33,7 +33,7 @@ scanner:
 
 llm:
   model: "claude-haiku-4-5-20251001"
-  max_tokens: 2048
+  max_tokens: 6000
 
 delivery:
   enabled: true
