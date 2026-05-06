@@ -1,0 +1,40 @@
+scanner:
+  sources:
+    - codeur
+    # - freelance_com   # à activer quand le scraper sera fait
+
+  # Profil envoyé à Claude pour qu'il note les missions selon ce qu'on sait faire
+  profile_summary: |
+    Développeur Python autodidacte spécialisé en automatisation IA et bots autonomes.
+
+    Compétences fortes :
+    - Python (asyncio, Pydantic, httpx, FastAPI)
+    - Web scraping (Playwright, selectolax, BeautifulSoup, contournement anti-bot)
+    - Intégrations LLM (Claude/Anthropic, GPT-4/OpenAI, prompts production-ready)
+    - Bots autonomes (Telegram Bot API, multi-agents IA)
+    - APIs REST (intégrations exchanges crypto, Outlook, Resend, etc.)
+    - GitHub Actions / CI/CD / cron
+
+    Réalisations marquantes :
+    - 10+ bots de trading crypto en production réelle (4 ans)
+    - Système d'automatisation multi-agents pour restaurant (briefing Telegram quotidien)
+    - Agent de veille tech open-source (HN + ArXiv + GitHub Trending → Claude → email)
+
+    Préférences de mission :
+    - Forfait projet (à partir de 800€) ou TJM 350-450€
+    - Soirs et weekends, 100% remote
+    - Pas de full-stack lourd (Vue/React lourd, mobile natif)
+    - Pas de machine learning custom (TensorFlow, PyTorch from scratch)
+
+  keywords_must_match: []  # vide = laisser Claude juger
+  min_score: 6
+  max_offers_already: 25
+  top_n: 10
+
+llm:
+  model: "claude-haiku-4-5-20251001"
+  max_tokens: 2048
+
+delivery:
+  enabled: true
+  subject_prefix: "Missions du jour"
