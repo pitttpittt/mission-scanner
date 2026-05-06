@@ -2,6 +2,7 @@ scanner:
   sources:
     - codeur
     - 404works
+    - free_work
 
   # Profil envoyé à Claude pour qu'il note les missions selon ce qu'on sait faire
   profile_summary: |
@@ -25,6 +26,21 @@ scanner:
     - Soirs et weekends, 100% remote
     - Pas de full-stack lourd (Vue/React lourd, mobile natif)
     - Pas de machine learning custom (TensorFlow, PyTorch from scratch)
+
+    ⚠️ ROLES À EXCLURE ABSOLUMENT (score 0-2 même si "IA" ou "automation" est dans le titre) :
+    - Apporteur d'affaires, commercial, sales, business developer
+    - Téléprospection, prospection téléphonique, cold calling
+    - Recrutement, RH, formateur, consultant non-tech
+    - Tout rôle de VENTE (commission-based)
+    - Vidéo, montage, design graphique, photographie
+    - SEO, content marketing pur (sans dev)
+
+    ✅ ROLES IDÉAUX (score 7-10) :
+    - Développeur Python / backend / data
+    - Dev de bots, scrapers, agents IA
+    - Intégration LLM (Claude, GPT-4) en production
+    - Automatisation de process (Make, n8n, Zapier remplacement par code)
+    - APIs et webhooks
 
   keywords_must_match: []  # vide = laisser Claude juger
   min_score: 6
